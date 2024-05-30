@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time table</title>
+</head>
+<style>
+    body {
+        /* background: black; */
+        background-image: url(img/cc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 7px;
+    }
+
+    .head {
+        /* background: rgb(0, 0, 0); */
+        width: 800px;
+        margin-top: 2%;
+        /* text-align: center; */
+
+    }
+
+    .head a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 3%;
+        text-transform: uppercase;
+    }
+
+    .head a:hover {
+        color: steelblue;
+        transition: 2s;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white;
+    }
+
+
+    table {
+        background: url(img/t.jpg);
+        border: 2px groove white;
+        color: white;
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 6%;
+        height: 35rem;
+
+    }
+
+    table th {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .back {
+
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        /* margin-left: 62px;
+            margin-top: 5%; */
+        transition: .8s;
+        font-weight: bold;
+        padding: 10px 32px;
+        margin-left: 1.5%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* transform-origin: left; */
+
+    }
+
+    .back:hover{
+        background: white;
+        color: rgb(0, 0, 0);
+
+        
+    }
+</style>
+
+<body>
+
+    <div class="head">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="staff.html">Faculty</a>
+
+    </div>
+
+    <table>
+        <tr>
+            <th>Day/Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+
+        <tr>
+            <td>7:30 to 8:20</td>
+            <td>JAVA</td>
+            <td>ENGLISH</td>
+            <td>JAVA</td>
+            <td>PYTHON</td>
+            <td>SOFTWARE</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>8:20 to 9:10</td>
+            <td>ENGLISH</td>
+            <td>PYTHON</td>
+            <td>JAVA</td>
+            <td>MATHS</td>
+            <td>SOFTWARE</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>9:10 to 10:00</td>
+            <td>JAVA</td>
+            <td>PYTHON</td>
+            <td>ENGLISH</td>
+            <td>MATHS</td>
+            <td>SOFTWARE</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>10:00 to 10:50</td>
+            <td>JAVA</td>
+            <td>C</td>
+            <td>ENGLISH</td>
+            <td>PYTHON</td>
+            <td>SOFTWARE</td>
+            <td>SOFTWARE</td>
+        </tr>
+        <tr>
+            <td>10:50 to 11:40</td>
+            <td>JAVA</td>
+            <td>C</td>
+            <td>MATHS</td>
+            <td>PYTHON</td>
+            <td>ENGLISH</td>
+            <td>SOFTWARE</td>
+        </tr>
+        <tr>
+            <td>11:40 to 12:30</td>
+            <td>JAVA</td>
+            <td>C</td>
+            <td>MATHS</td>
+            <td>PYTHON</td>
+            <td>ENGLISH</td>
+            <td>SOFTWARE</td>
+        </tr>
+    </table>
+
+    <a href="display.html"><button class="back">Back</button></a>
+
+</body>
+
+</html>

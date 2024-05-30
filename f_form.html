@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    body {
+        /* background: black; */
+        background-image: url(img/cc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 7px;
+    }
+
+    .head {
+        /* background: rgb(0, 0, 0); */
+        width: 800px;
+        margin-top: 2%;
+        /* text-align: center; */
+
+    }
+
+    .head a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 3%;
+        text-transform: uppercase;
+    }
+
+    .head a:hover {
+        color: steelblue;
+        transition: 2s;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white;
+    }
+
+    form {
+        background: url(img/t.jpg);
+        width: 52.5rem;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        height: 20rem;
+
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    table th {
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    #f-submit {
+        background: black;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* border-radius: 6px; */
+        width: 45%;
+        margin-left: 85px;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        font-weight: 600;
+        /* margin: auto; */
+        position: absolute;
+        margin-top: 30px;
+        height: 40px;
+        border: none;
+    }
+
+    #f-submit:hover {
+        background: white;
+        color: black;
+        font-weight: bolder;
+        border: none;
+        transition: 1s;
+    }
+
+    form input {
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+
+    <div class="head">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="staff.html">Faculty</a>
+
+    </div>
+
+    <form action="s_dashboard.html">
+        <h1>FILL UP THE BASIC DETAILS</h1>
+
+        <!-- <label for="name">NAME :</label><br><br>
+    <input type="text">
+    <label for="middle-name">MIDDLE NAME :</label>
+    <input type="text">
+    <label for="surname">SURNAME :</label>
+    <input type="text"> -->
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>MIDDLE NAME</th>
+                <th>SURNAME</th>
+                <th>CLASS</th>
+
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr> <br>
+            <tr>
+                <th>DIV</th>
+                <th>SUBJECT</th>
+                <th>CONTACT NO</th>
+                <th>EMAIL</th>
+
+            </tr>
+            <tr>
+
+                <td><input type="text"></td>
+                <td><input type="text" maxlength="2"></td>
+                <td><input type="text" maxlength="10"></td>
+                <td><input type="EMAIL" aria-required="@" maxlength="20"></td>
+
+
+
+            </tr><br>
+
+        </table>
+        <a href="f_dashboard.html"><button id="f-submit">submit</button></a>
+    </form>
+
+</body>
+<script>
+    function saveData() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("phone", phone);
+
+        window.location.href = "s_dashboard.html";
+      }
+</script>
+</html>

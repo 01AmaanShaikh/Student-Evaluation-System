@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+</head>
+<style>
+     body {
+            /* background: black; */
+            background-image: url(img/cc.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding: 7px;
+        }
+
+        .head {
+            /* background: rgb(0, 0, 0); */
+            width: 800px;
+            margin-top: 2%;
+            /* text-align: center; */
+
+        }
+
+        .head a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            padding: 3%;
+            text-transform: uppercase;
+        }
+        .head a:hover {
+        color: steelblue;
+        transition: 2s;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white ;
+    }
+
+
+/* ____________________________________________ */
+
+form {
+    /* background: url(img/t.jpg);
+    background-repeat: no-repeat; */
+    height: 500px;
+    width: 530px;
+    align-items: center;
+    /* align-content: center; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    /* padding: 2%; */
+    margin-top: 4%;
+
+  }
+
+  h1{
+    color: steelblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 8%;
+  }
+  form label {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin-left: 8px;
+  }
+
+  .b input {
+    margin-left: 33%;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    /* padding: 18px 45px; */
+    background: white;
+    color: black ;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    height: 44px;
+    width: 160px;
+  }
+.b input:hover{
+  transition: .5s;
+  background: black;
+  color: white;
+  
+  
+}
+  #div {
+    width: 15%;
+  }
+
+  #clas {
+    width: 15%;
+    /* margin-left: 18%; */
+  }
+
+  #rollcall {
+    width: 15%;
+  }
+
+  #name, #email, #phone,#clas, #parent,#subject{
+    margin-left: 25%;
+  }
+  .l label{
+    margin-left: 22%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .l input{
+    width: 60%;
+  }
+
+  form input {
+    height: fit-content;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    border: none;
+    height: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+
+  }
+
+
+.l label{
+  margin-left: 23%;
+}
+
+
+
+</style>
+<body>
+    
+ <div class="head">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact us</a>
+    <a href="faq.html">FAQs</a>
+    <a href="staff.html">Faculty</a>
+
+</div>
+
+<form action="connect.php" method="post">
+    <!-- <label for="profile">Profile photo:</label>
+      <input type="file" id="profile" name="profile"><br> -->
+<div class="l">
+  <h1>FILL UP THE BASIC DETAILS</h1>
+  <label for="name">Name:</label><br><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Email:</label><br><br>
+  <input type="email" id="email" name="email"><br>
+
+  <label for="phone">Phone:</label><br><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="subject">Subject:</label><br><br>
+  <input type="text" id="subject" name="subject"><br>
+</div>
+    
+<label for="clas">Class:</label>
+<input type="text" id="clas" name="clas">
+
+    <!-- <label for="div">Div:</label>
+    <input type="text" id="div" name="div"> -->
+
+
+    <!-- <label for="rollcall">Roll no:</label>
+    <input type="text" id="rollcall" name="rollcall"><br> -->
+
+
+    <div class="b"> <input type="button" value="Submit" onclick="saveData()">
+    </div>
+  </form>
+
+  <script>
+    function saveData() {
+      // var profile = document.getElementById("profile").value;
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      var subject = document.getElementById("subject").value;
+      // var parent = document.getElementById("parent").value;
+      var clas = document.getElementById("clas").value;
+      // var rollcall = document.getElementById("rollcall").value;
+
+      // localStorage.setItem("profile", profile);
+      localStorage.setItem("name", name);
+      localStorage.setItem("email", email);
+      localStorage.setItem("phone", phone);
+      localStorage.setItem("div", div);
+      localStorage.setItem("clas", clas);
+      localStorage.setItem("rollcall", rollcall);
+      localStorage.setItem("parent", parent);
+
+      window.location.href = "display.html";
+    }
+  </script>
+
+</body>
+</html>

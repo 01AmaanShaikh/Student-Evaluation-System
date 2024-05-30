@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+</head>
+<style>
+    body {
+        /* background: black; */
+        background-image: url(img/cc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 7px;
+    }
+
+    .head {
+            /* background: rgb(0, 0, 0); */
+            width: 800px;
+            margin-top: 2%;
+            /* text-align: center; */
+
+        }
+
+        .head a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            padding: 3%;
+            text-transform: uppercase;
+        }
+
+        .head a:hover {
+        color: steelblue;
+        transition: 2s;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white ;
+    }
+    .btn{
+        background-color: black;
+            color: white;
+            border-radius: 3px;
+            margin-left: 100px;
+            width: 10%;
+            height: 40px;
+
+    }
+    .btn:hover{
+        background: white;
+        color: black;
+        font-weight: 600;
+    }
+    /* #cut img{
+
+        
+        animation-name: zoom;
+        animation-duration: 4s;
+        animation-timing-function: 0.1s;
+        animation-direction: alternate;
+        animation-delay: 1s;
+     
+
+    }
+    @keyframes zoom {
+        0%{
+            transform:rotate(180deg);
+        }
+        
+    
+        
+        
+        100%{
+            transform:rotate(360deg);
+        }
+        
+    } */
+
+    .imgs img{
+        width: 25rem;
+        height: 16rem;
+        /* align-items: center; */
+        /* align-content: center; */
+        /* justify-content: center; */
+        margin: auto;
+        display: inline-flex;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+       
+    }
+
+    .imgs{
+        margin-top: 2%;
+
+        margin: auto;
+        width:85rem;
+        height: 41rem;
+        /* border: red solid 1px; */
+        
+    }
+   
+   img:hover{
+    /* transform: scaleX(1.5, 1.1); */
+    /* transform: scaleY(1.1); */
+    transform: scale(1.1);
+    transition: 1s;
+   }
+</style>
+
+<body>
+
+    <div class="head">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="staff.html">Faculty</a>
+
+    </div>
+
+
+    <!-- ALL IMGAES CODE  -->
+
+<!-- <div id="cut">
+    <section class="text-gray-600 body-font">
+        <div class="container px-2 py-10 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="img/bus.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="img/guys.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block"
+                            src="img/lib.jpg">
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block"
+                            src="img/class.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="img/lap.jpg">
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block"
+                            src="img/classs.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="imgs">
+<img src="img/bus.jpg" alt="no internet">
+<img src="img/guys.jpg" alt="no internet">
+<img src="img/lap.jpg" alt="no internet">
+<img src="img/lib.jpg" alt="no internet">
+<img src="img/book.jpg" alt="no internet">
+<img src="img/class.jpg" alt="no internet">
+    </section>
+<a href="home.html"><button class="btn">SIGN UP</button></a>
+</div>
+    
+</body>
+
+</html>

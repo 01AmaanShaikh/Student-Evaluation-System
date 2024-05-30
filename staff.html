@@ -1,0 +1,437 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>ABOUT</title>
+</head> -->
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+    <title>staff</title>
+  </head>
+
+  <style>
+    body {
+        /* background: black; */
+        background-image: url(img/cc.png);
+        background-repeat: no-repeat;
+        background-size:100%;
+        
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 7px;
+    }
+
+    .head {
+            /* background: rgb(0, 0, 0); */
+            width: 800px;
+            margin-top: 2%;
+            /* text-align: center; */
+
+        }
+
+        .head a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            padding: 3%;
+            text-transform: uppercase;
+        }
+
+        .head a:hover {
+        color: steelblue;
+        transition: 2s;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid white ;
+    }
+
+  
+                                       /* MAIN CONTAINER  */
+
+
+
+
+
+
+
+
+    .container {
+        background: black;
+        width: 220px;
+        height: 300px;
+        /* opacity: .5; */
+        border-radius: 0;
+        margin-left: 30px;
+        margin-top: 10%;
+        /* border: 2px solid black; */
+    }
+
+    .container:hover {
+       
+        /* opacity: 1; */
+        border-radius: 15px;
+        transition: 1s;
+        box-shadow: rgb(95, 134, 145) 1px 1px 15px ;
+
+
+    }
+
+    .container img {
+        height: 105px;
+        border-radius: 50%;
+        margin-left: 22%;
+        opacity: 1;
+        
+
+    }
+    
+    .container label {
+       
+        color:dodgerblue ;
+        margin-left: 18%;
+
+    }
+    .container h6{
+        color: rgb(255, 255, 255) ;
+        margin-left: 11%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+
+    }
+    .container p{
+        font-size: smaller;
+        /* margin-top: 0; */
+        color: white;
+        text-align: center;
+    }
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    color: white;
+    width: 500px;
+    margin-left: 32%;
+    
+}
+   
+
+                                            /* CARDS  */
+
+.card-deck{
+    width: 80rem;
+    background: none;
+    display:flex;
+    height: 2rem;
+    margin-left: 70px;
+   
+}
+.card{
+    /* background:rgb(217, 217, 217) ; */
+    background: url(img/t.jpg);
+
+    border-radius: 15px;
+    width: 20rem;
+    display: flex;
+    justify-content:space-evenly;
+    margin-right:2%;
+    
+
+    /* justify-content: space-between; */
+    
+}
+
+
+
+.card-img-top{
+    width: 6rem;
+    border-radius: 50%;
+    /* border: rgb(255, 255, 255)   ; */
+    border: 4px;
+    border-color: steelblue;
+    border-style:  solid ;
+    padding: 3px;
+   
+}
+
+
+.card-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: steelblue;
+    font-weight: 900;
+    word-spacing: 4px;
+    font-size: larger;
+}
+.card-text{
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.card-deck{
+
+        
+animation-name: zoom;
+animation-duration: 3s;
+animation-timing-function: 1s;
+animation-direction: alternate;
+animation-delay: .1s;
+
+
+}
+@keyframes zoom {
+0%{
+    /* transform:rotate(180deg); */
+    /* margin-left: 0; */
+    width: 40rem;
+    height: 13rem;
+    
+}
+
+
+
+
+100%{
+    /* transform:rotate(360deg); */
+    /* margin-left: 70px; */
+    width: 80rem;
+    height: 10rem;
+  }
+
+}
+
+
+small{
+  color: white;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+  <body>
+   
+    <div class="head">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="staff.html">Faculty</a>
+
+    </div>
+    <br>
+    <h1>_______________TEACHER________________________________________</h1>
+    <br><br>
+   
+    
+    <div class="card-deck">
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maths Teacher</h5>
+            <p class="card-text">M.A.,Maths Education,Pune City University</p>
+            
+            <small>MOB: +91 1111111111</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+          
+        </div>
+
+
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">English Teacher</h5>
+            <p class="card-text">B.A. in English Litrature</p>
+           
+            <small>MOB: +91 2222222222</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">C Language Teacher</h5>
+            <p class="card-text">B.C.A, M.C.A</p>
+            
+            <small>MOB: +91 3333333333</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+      </div>
+
+
+
+
+      <br><br><br>   
+      <br><br><br>   
+      <br><br><br>   
+      <br><br><br>  
+      
+      
+      <div class="card-deck">
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Python Teacher</h5>
+            <p class="card-text">B.C.A, M.C.A</p>
+            
+            <small>MOB: +91 1111111111</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+          
+        </div>
+
+
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Java Teacher</h5>
+            <p class="card-text">B.C.A, M.C.A</p>
+           
+            <small>MOB: +91 2222222222</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Software Testing Teacher</h5>
+            <p class="card-text">HOD</p>
+            
+            <small>MOB: +91 3333333333</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+      </div>
+
+
+      <br><br><br>   
+      <br><br><br>   
+
+      <br><br><br>   
+    <br><br><br>
+    <h1>_________________STAFF__________________________________________</h1>
+    <br><br>
+    <!-- <div class="container">
+        <img src="my.JPG" alt="">
+        <label for="trainer">Certified Trainer</label>
+        <h6>AMAAN SHAIKH</h6>
+        
+        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque amet nam a sdkbnd d quisquam inventore?"</p>
+    </div> -->
+   
+    
+    <div class="card-deck">
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Librarian</h5>
+            <p class="card-text">10+2, Library Management</p>
+            
+            <small>MOB: +91 1111111111</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+          
+        </div>
+
+
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lab Assistant</h5>
+            <p class="card-text">10+2, B.C.A</p>
+           
+            <small>MOB: +91 2222222222</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        
+        <div class="card">
+          <img src="img/me.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lab Assistant</h5>
+            <p class="card-text">10+2, B.C.A</p>
+            
+            <small>MOB: +91 3333333333</small>
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+      </div>
+
+
+      <br><br><br>   
+      <br><br><br>   
+      <br><br><br>   
+    
+    
+
+                        <!-- FOOTER  -->
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
